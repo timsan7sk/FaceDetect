@@ -5,11 +5,20 @@ const router = createRouter({
     history: createWebHashHistory(),
     routes: [
         {
-            path: '/',
+            path: '/:catchAll(.*)',
+            redirect: { name: 'video' }
+        },
+        {
+            path: '/#',
             component: AppLayout,
             children: [
                 {
-                    path: '/',
+                    path: '/video',
+                    name: 'video',
+                    component: () => import('@/views/Video.vue')
+                },
+                {
+                    path: '/dashboard',
                     name: 'dashboard',
                     component: () => import('@/views/Dashboard.vue')
                 },
