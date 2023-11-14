@@ -17,7 +17,7 @@
 - Get Video Record
 
 ## Specification
-> When testing, we used a Sunplus-IT-Co-HD-720P-webcam with a resolution of 1280x640. Other camera resolutions require code optimization.
+> When testing, used a Sunplus-IT-Co-HD-720P-webcam with a resolution of 1280x640. Other camera resolutions require code optimization.
 
 ## Customize Configuration
 
